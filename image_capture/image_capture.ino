@@ -71,7 +71,7 @@ void loop()
     {
       // check if bit 6 (Data_Valid) is set
       // 01xxxxxx = 64 + some value (between 0 to 63)
-      if (Pixel_Data[Current_Pixel_Index] > 64)
+      if (Pixel_Data[Current_Pixel_Index] >= 64)
       {
         Current_Pixel_Index++;
       }
